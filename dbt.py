@@ -23,7 +23,7 @@ with DAG(
 
     # [START howto_operator_bash]
     run_this = BashOperator(
-        task_id="run_dbt",
+        task_id="run_dbt_1",
         bash_command="cd /Users/hiltonma/first_dbt_project/; /Users/hiltonma/anaconda3/bin/dbt run --select my_third_dbt_models",
     )
     # [END howto_operator_bash]
