@@ -10,7 +10,7 @@
 
 with source_data as (
  
-   select spend, current_date() from FIVETRAN_DB.GOOGLE_SHEETS.AFFILIATE_CACTUS
+   select {{ cents_to_dollars('spend') }} spend, current_date() from FIVETRAN_DB.GOOGLE_SHEETS.AFFILIATE_CACTUS
 
 )
 
